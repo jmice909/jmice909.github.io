@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>John Micenksy</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/johncss.css" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body style="overflow-y: hidden;">
+	<div class="container" id="entry">
+		<div id="enter_but">
+			<div id="enter">Enter</div>
+		</div>
+	</div>
+  
+	<div class="container-fluid welcome" id="welcome">
+	<div class="masthead">
+	<div class="container"
+	<nav class="navbar nav-default">
+		<div class="container-fluid hidden-xs hidden-sm">
+		<div data-spy="affix" data-offset-top="60" data-offset-bottom="200">
+			<div id="navbar">
+			<ul hidden class="nav nav-pills nav-justified">
+				<li><a class="flyin-nav" href="index.html">HOME</a></li>
+				<li><a class="flyin-nav" href="about.html">ABOUT ME</a></li>
+				<li><a class="flyin-nav" href="portfolio.html">PORTFOLIO</a></li>
+				<li><a class="flyin-nav" href="resume.html">RESUME</a></li>
+			<!--	<li><a id="twenty-link" onclick="show_content('#twentytwenty')">20/20</a></li>-->
+			</ul>
+			</div>
+		</div>
+		</div>
+		<div class="dropdown hidden-lg hidden-md">
+		<div data-spy="affix" data-offset-top="60" data-offset-bottom="200">
+		  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				  <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+		  </button>
+		  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="about.html">ABOUT ME</a></li>
+				<li><a href="portfolio.html">PORTFOLIO</a></li>
+				<li><a href="resume.html">RESUME</a></li>
+		  </ul>
+		</div>
+		</div>
+	</nav>
+	</div>
+	</div>
+	<div class="container-fluid">
+	  <h1 id="header1" class="name">John Micensky</h1>
+		  <h2 class="name">Sound Engineer</h2>
+	<div class="jumbotron anim" id="home_jumbo">
+	  		<p id="intro">My name is John Micensky and this is my personal website! On my site there is a collection of work I've created or contributed to as well as my resume and a little about myself.</p>
+	</div>
+	</div>
+	</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/johnjs.js"></script>
+	<script>
+		$('.name').hide();
+		//$('.nav').hide();
+		$('#enter_but').click(function(){
+			$('body').css('overflowY', 'scroll'); 
+			$('#entry').fadeOut('fast',function(){
+			$('.nav').fadeIn("fast");
+			$('.jumbotron').removeClass('anim');
+			$('.nav li a').removeClass('flyin-nav');
+			$('.name').fadeIn(1500);
+			});
+
+		});
+	</script>
+  </body>
+</html>

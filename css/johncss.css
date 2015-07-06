@@ -1,0 +1,400 @@
+/* JOHN MICENSKY CSS SHEET */
+
+/* CSS FOR ALL SIZES */
+
+
+body .container{
+	margin-bottom: 2%;
+}
+body{
+	overflow-x:hidden;
+}
+a:hover, a{
+	color: black;
+	text-decoration: none;
+}
+#entry{
+	text-align:center;
+}
+#enter{
+	width:6em;
+	background-color:rgba(255,255,255,0.6);
+	
+	border-color:white;
+	border: outset;
+	border-width:5px;
+	font-size:2em;
+	color:white;
+	text-shadow: 2px 2px 4px #000000;
+	font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
+	-webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+#enter:hover{
+	background-color:white;
+	color:black;
+	text-shadow: 2px 2px 4px black;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform:translateZ(0) scale(1.05); /* Safari and Chrome */
+    -moz-transform:scale(1.05); /* Firefox */
+    -ms-transform:scale(1.20); /* IE 9 */
+    -o-transform:translatZ(0) scale(1.05); /* Opera */
+    transform:translatZ(0) scale(1.05);
+	    box-shadow: 7px 7px 5px #1B1B1B;
+}
+.box{
+	padding-bottom:5%;
+}
+#readmore{
+	text-align:center;
+	margin-top:2%;
+	margin-bottom:2%;
+	font-size:1.3em;
+	width:7em;
+}
+/* RESUME CSS */
+#requests, #name-resume{
+	text-align: center;
+}
+#objective{
+	text-align:center;
+	font-size:1.7em;
+	margin-top:5%;
+}
+#obj{
+	font-size:1.1em;
+	text-align:center;
+	margin-bottom:5%;
+}
+
+
+/* PORTFOLIO */
+.port{
+	width:100%;
+}
+.port-head{
+	text-align:center;
+}
+#port-h3{
+	font-size:3em;
+}
+.audio{
+	text-align:center;
+	margin:0 auto;
+}
+/* JUMBOTRON */
+
+.anim{
+	transform:translate(2000px,0px);
+}
+
+.jumbotron{
+	background: url('images/johnIntro.jpg') center center;
+	margin-top:2em;
+	position:relative;
+	width: 100%;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+	color:white;
+	margin-bottom:0;
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+			-moz-transition: all 1s ease;
+		-ms-transition: all 1s ease;
+		-o-transition: all 1s ease;
+		transition: all 1s ease;		
+}
+
+footer{
+	margin-top:4em;
+	margin-bottom:2%;
+}
+
+/* MD AND LG SCREENS */
+/* MD AND LG SCREENS */
+@media (min-width: 992px){
+	h1, h2{
+		text-align:center;
+		font-family: Georgia, Serif;
+	}
+	#header1{
+		font-size:3em;
+	}
+	#about p{
+		font-size:1.3em;
+		line-height:1.5em;
+	}
+	#entry{
+		height:1000px;
+	}
+	.nav li a{
+		font-size:2em;
+		border-radius:10px;
+		-webkit-transition: all 2s ease;
+		-moz-transition: all 2s ease;
+		-ms-transition: all 2s ease;
+		-o-transition: all 2s ease;
+		transition: all 2s ease;	
+	}
+	
+	.flyin-nav{
+		transform: translate(0,-200px);
+		-webkit-transition: all 2s ease;
+		-moz-transition: all 2s ease;
+		-ms-transition: all 2s ease;
+		-o-transition: all 2s ease;
+		transition: all 2s ease;	
+	}
+	body{
+		font-size:1.7em;
+	}
+	body{
+		font-family: Georgia, Serif;
+		background:      /* linear-gradient(
+
+						rgba(0, 0, 0, 0.70), 
+						rgba(0, 0, 0, 0.70)
+						),  */
+					/* url('images/congruent_pentagon.png'); */
+						url('images/chicago_welcome6.png');
+		background-attachment: fixed;
+		background-position: center center;
+		background-size: cover;
+		background-repeat: repeat;
+ 		  -webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  -o-background-size: cover; 
+		 overflow-y: scroll;
+	}
+	#enter_but{
+	   text-align:center;
+	   position:absolute;
+	   left:45%;
+	   top:50%; 
+	}
+	.nav-tabs>li>a:hover{
+		color:rgb(240,240,240);
+		text-shadow: 3px 3px 3px black;
+		-webkit-transition: all .3s ease;
+		-moz-transition: all .3s ease;
+		-ms-transition: all .3s ease;
+		-o-transition: all .3s ease;
+		transition: all .3s ease;			
+	}
+	.nav-tabs>li>a{
+		color: white;
+		text-shadow: 2px 2px 4px black;
+		border-color:white;
+		border-top:outset;
+		border-right:outset;
+		border-left:outset;
+		border-width:1px;
+		border-radius:10px;
+		background: linear-gradient(
+						rgba(255,255,255,0.7),
+						rgba(255,255,255,0.7));
+		background:  -webkit-linear-gradient(
+						rgba(255,255,255,0.7),
+						rgba(255,255,255,0.7));
+		background:  -o-linear-gradient(
+						rgba(255,255,255,0.7),
+						rgba(255,255,255,0.7));
+		background:  -moz-linear-gradient(
+						rgba(255,255,255,0.7),
+						rgba(255,255,255,0.7));
+		-webkit-transition: all .3s ease;
+		-moz-transition: all .3s ease;
+		-ms-transition: all .3s ease;
+		-o-transition: all .3s ease;
+		transition: all .3s ease;	
+
+	}
+	.nav-tabs>li.active>a{
+		color:black;
+		text-shadow:0px 0px 1px;
+		/* text-shadow: 1px 1px 1px white; */
+		background:     rgba:(255,255,255,0.8);		
+		-webkit-transition: all .3s ease;
+		-moz-transition: all .3s ease;
+		-ms-transition: all .3s ease;
+		-o-transition: all .3s ease;
+		transition: all .3s ease;	
+	}
+	nav-tabs{
+		border-bottom:solid;
+	}
+	.tab-pane{
+		color:white;
+		text-shadow:1px 1px 1px black;
+		border:ridge;
+		height:100%;
+		background:     linear-gradient(
+							rgba(150,110,220,0.5),
+							rgba(50,150,230,0.5));
+							
+					);
+					/* url('images/congruent_pentagon.jpg'); */
+		padding-left:3em;
+		padding-bottom:10em;
+	}
+	#resume a, h4 a{
+		color:white;
+		text-decoration: underline;
+	}
+	#intro-box{
+		height:100%;
+		width:100%;
+		background: rgba(255,255,255,0.8);
+	}
+	#intro{
+		margin-top:20%;
+		font-size:2em;
+		font-weight: bold;
+	}
+	#resume{
+		color:white;
+		text-shadow:1px 1px 1px black;
+		font-size:120%;
+		border: ridge;
+		padding-left:3%;
+		padding-right:3%;
+		background:    linear-gradient(45deg,
+							rgba(10,200,50,0.7),
+							rgba(10,200,170,0.7)
+					);
+		background:  -webkit-linear-gradient(45deg,
+							rgba(10,200,50,0.7),
+							rgba(10,200,170,0.7)
+					);
+		background:  -o-linear-gradient(45deg,
+							rgba(10,200,50,0.7),
+							rgba(10,200,170,0.7)
+					);
+		background:  -moz-linear-gradient(45deg,
+							rgba(10,200,50,0.7),
+							rgba(10,200,170,0.7)
+					);
+					/* url('images/congruent_pentagon3.png'); */
+/* 				background:     linear-gradient(
+						rgba(255,0, 0, 0.45), 
+						rgba(255, 0, 100, 0.45)
+						),
+					url('images/congruent_pentagon.png'); */
+	}
+	#aboutbox{
+		border: ridge;
+		padding-left:3%;
+		padding-right:3%;
+		line-height:1.7em;
+		font-size:1.25em;
+		color: white;
+		text-shadow: 1px 1px 1px black;
+		background:  -webkit-linear-gradient(20deg,
+							rgba(120,50,150,0.6),
+							rgba(200, 0, 20,0.6)
+					);
+		background:  -o-linear-gradient(20deg,
+							rgba(120,50,150,0.6),
+							rgba(200, 0, 20,0.6)
+					);
+		background:  -moz-linear-gradient(20deg,
+							rgba(120,50,150,0.6),
+							rgba(200, 0, 20,0.6)
+					);
+		background: linear-gradient(20deg,
+							rgba(120,50,150,0.6),
+							rgba(200, 0, 20,0.6)
+					);
+					/* url('images/congruent_pentagon3.png'); */
+/* 				background:     linear-gradient(
+						rgba(255,0, 0, 0.45), 
+						rgba(255, 0, 100, 0.45)
+						),
+					url('images/congruent_pentagon.png'); */
+	}
+	.nav{
+		background: transparent;
+/* 		border:ridge;
+		border-color:#4D4D4D; */
+	}
+
+	.nav-justified>li>a{
+		color: white;
+		text-shadow: 1px 1px 1px black;
+		-webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+	}
+	.nav-justified>li>a:hover{
+		color: white;
+		background-color: rgba(255,255,255,0.3);
+		text-shadow: 2px 2px 4px black;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform:translateZ(0) scale(1.05); /* Safari and Chrome */
+    -moz-transform:scale(1.05); /* Firefox */
+    -ms-transform:scale(1.20); /* IE 9 */
+    -o-transform:translatZ(0) scale(1.05); /* Opera */
+    transform:translatZ(0) scale(1.05);
+	    box-shadow: 5px 5px 3px #1B1B1B;
+	}
+	#chris-vid{
+		margin-top:4%;
+	}
+	.port-para{
+		text-align:center;
+		font-size:1.25em;
+		margin-top:4%;
+		padding-right:5%;
+		padding-left:3%;
+		
+	}
+	.port-row{
+		width:98%;
+		text-align:center;
+	}
+}
+
+/*SM SCREENS */
+/*SM SCREENS */
+@media (max-width: 991px){
+	body{
+		font-size:1.6em;
+		background-attachment: fixed;
+		background-position: center center;
+		font-size:1.5em;
+			background: url('images/chicago_welcome3.jpg');
+		   background-repeat: no-repeat;
+		   background-size: cover;
+		  -webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  -o-background-size: cover;
+	
+	}
+}
+
+/* XS SCREENS */
+/* XS SCREENS */
+@media (max-width: 768px){
+	body{
+		width:100%;
+		min-height:1000px;
+		font-size:1.5em;
+		background-attachment: fixed;
+		background-position: center center;
+			background: url('images/chicago_welcome3.jpg');
+		   background-repeat: no-repeat;
+		   background-size: cover;
+		  -webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  -o-background-size: cover;
+
+		}
+}

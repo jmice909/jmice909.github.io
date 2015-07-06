@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>ABOUT ME</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/johncss.css" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  
+	<div class="container">
+	<div class="masthead">
+	<nav class="navbar nav-default">
+		<div class="container-fluid hidden-xs hidden-sm">
+		<!-- <div data-spy="affix" data-offset-top="10" data-offset-bottom="100"> -->
+			<div id="navbar">
+			<ul class="nav nav-pills nav-justified">
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="about.html">ABOUT ME</a></li>
+				<li><a href="portfolio.html">PORTFOLIO</a></li>
+				<li><a href="resume.html">RESUME</a></li>
+			<!--	<li><a id="twenty-link" onclick="show_content('#twentytwenty')">20/20</a></li>-->
+			</ul>
+			</div>
+		<!-- </div> -->
+		</div>
+		<div class="dropdown hidden-lg hidden-md">
+		<div data-spy="affix" data-offset-top="60" data-offset-bottom="200">
+		  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				  <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+		  </button>
+		  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="about.html">ABOUT ME</a></li>
+				<li><a href="portfolio.html">PORTFOLIO</a></li>
+				<li><a href="resume.html">RESUME</a></li>
+		  </ul>
+		</div>
+		</div>
+	</nav>
+	</div>
+		<div class="row box" id="aboutbox">
+			<article id="about">
+				<h1>ABOUT ME</h1>
+				<p>I am currently a junior, studying Sound Recording Technology at DePaul University’s School of Music.</p>
+				<p>I am proficient at using Protools 11, but have found that I’m most efficient when using Logic Pro X. I’ve used that specific DAW for the largest number of projects. I am very passionate about the music I work with and I am always striving to get a better sound than the last project. While I’m always working to make every next song better, I also understand that groups need their recordings to sound similar in order to have continuity across their entire record. I say this because it is crucial to keep your clients overall goals in mind.</p>
+				<p>Voice is my instrument of study at the school of music, but I am also quite capable of playing Piano, Drums, and Guitar. In the past year and a half at DePaul, I’ve been working in our studios at least once or twice a week, in order to get hands on experience with all of the equipment available to me. In addition to working on my own electronic projects, I’ve recorded a handful of my own rock-influenced projects and a few acoustic projects as well.</p>
+				
+				<button id="readmore" type="button" class="btn btn-primary center-block">Read More</button>
+				<div id="extra-about" class=".container">
+					<p>	Aside from my own music, I’ve recorded songs written by two talented guitarists, Levi Clinton and Jack Kapson. In addition to being head engineer, I am also the drummer in Levi’s project project that is now officially titled Duck Like Animals. This has been an interesting experience, as the drummer I must come up with creative and comfortable rhythmic patterns to match Levi’s unique guitar playing. Once that’s recorded, I have to stop looking at the song from a drummer’s point of view and look at it more from an engineer’s point of view. To do this I must discuss what message and sound that Levi is looking to get across with each tune, and work to match his goals for each mix. This, to me, is different than looking at it from a drummer’s point of view for I am no longer focused entirely on how the song “grooves”, but more on how the song sounds as a whole.</p><br>
+					
+					<p>	Working with Jack Kapson felt a bit more “at home”, for we are old friends who have always shared a passion for music. This project’s primary goal was actually more of a planned learning experience. Weeks before this session, my professor Thomas Miller had generously taken time out of class to show me how to use our studios patch bay. This knowledge gave me the ability to easily connect two rooms together, separating the performer from the board. Following this experience, I have felt much more confidant looking at a board like DePaul’s (I’LL INSERT BOARD NAME WHEN I FIND IT) and starting a recording session. I loved that I had the ability to hear the exact product that would be his music, and continually make smart mixing decisions as the recording process was happening. As I was making changes I thought I’d also try out the board’s equalizer and compressor. I know software compressors quite well, for I have been using Native Instruments and Fab Filters products for nearly a year now. Not to mention my experience with Logic’s stock products, before I had the money to buy better plug-ins. While my software experience is quite extensive, I had never worked with a hardware compressor or equalizer before. As you may know, hardware editing can be tricky if you are doing it before the signal is recorded for the changes you make will be permanently on that recording. With this knowledge, I proceeded with caution and used a tasteful amount of compression and equalization to really bring out Jack’s voice. I’m really glad I did this for you will notice his voice sits quite nicely on top of his Jack Johnson-esque guitar licks.</p>
+
+				</div>
+			</article>
+		</div>
+
+  
+	</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/johnjs.js"></script>
+	<script>
+	$('#extra-about').hide();
+		$("#readmore").click(function(){
+			if($("#extra-about").is(":visible"))
+			{
+				$("#readmore").text("Read More");
+				$("#extra-about").slideUp("slow");
+			}
+			else{
+				$("#readmore").text("Close");
+				$("#extra-about").slideDown("slow");
+			}
+		});
+	</script>
+  </body>
+</html>
